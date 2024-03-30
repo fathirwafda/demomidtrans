@@ -2,24 +2,24 @@
 <testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-31T06:30:55 WIB" name="Surefire suite" finished-at="2024-03-31T06:31:53 WIB" duration-ms="57128">
+  <suite started-at="2024-03-31T06:50:07 WIB" name="Surefire suite" finished-at="2024-03-31T06:50:53 WIB" duration-ms="45994">
     <groups>
     </groups>
-    <test started-at="2024-03-31T06:30:55 WIB" name="Surefire test" finished-at="2024-03-31T06:31:53 WIB" duration-ms="57128">
+    <test started-at="2024-03-31T06:50:07 WIB" name="Surefire test" finished-at="2024-03-31T06:50:53 WIB" duration-ms="45994">
       <class name="CheckoutTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:30:55 WIB" name="setUp" finished-at="2024-03-31T06:31:04 WIB" duration-ms="8320" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:50:07 WIB" name="setUp" finished-at="2024-03-31T06:50:17 WIB" duration-ms="9445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:31:04 WIB" name="initPages" finished-at="2024-03-31T06:31:04 WIB" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="initPages()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:50:17 WIB" name="initPages" finished-at="2024-03-31T06:50:17 WIB" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPages -->
-        <test-method signature="checkoutWithExpiredDateTest()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:31:04 WIB" name="checkoutWithExpiredDateTest" finished-at="2024-03-31T06:31:09 WIB" duration-ms="5491" status="PASS">
+        <test-method signature="checkoutWithExpiredDateTest()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:50:17 WIB" name="checkoutWithExpiredDateTest" finished-at="2024-03-31T06:50:20 WIB" duration-ms="3311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkoutWithExpiredDateTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:31:09 WIB" name="tearDown" finished-at="2024-03-31T06:31:10 WIB" duration-ms="1156" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:50:20 WIB" name="tearDown" finished-at="2024-03-31T06:50:22 WIB" duration-ms="1529" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,19 +30,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:31:10 WIB" name="setUp" finished-at="2024-03-31T06:31:16 WIB" duration-ms="5628" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:50:22 WIB" name="setUp" finished-at="2024-03-31T06:50:28 WIB" duration-ms="6254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:31:16 WIB" name="initPages" finished-at="2024-03-31T06:31:16 WIB" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="initPages()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:50:28 WIB" name="initPages" finished-at="2024-03-31T06:50:28 WIB" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPages -->
-        <test-method signature="checkoutWithInvalidCardTest()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:31:16 WIB" name="checkoutWithInvalidCardTest" finished-at="2024-03-31T06:31:21 WIB" duration-ms="5180" status="PASS">
+        <test-method signature="checkoutWithInvalidCardTest()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:50:28 WIB" name="checkoutWithInvalidCardTest" finished-at="2024-03-31T06:50:31 WIB" duration-ms="3575" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkoutWithInvalidCardTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:31:21 WIB" name="tearDown" finished-at="2024-03-31T06:31:22 WIB" duration-ms="753" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:50:31 WIB" name="tearDown" finished-at="2024-03-31T06:50:32 WIB" duration-ms="1081" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,19 +53,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:31:22 WIB" name="setUp" finished-at="2024-03-31T06:31:29 WIB" duration-ms="6630" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:50:32 WIB" name="setUp" finished-at="2024-03-31T06:50:39 WIB" duration-ms="6397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:31:29 WIB" name="initPages" finished-at="2024-03-31T06:31:29 WIB" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="initPages()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:50:39 WIB" name="initPages" finished-at="2024-03-31T06:50:39 WIB" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPages -->
-        <test-method signature="successfulCheckoutTest()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:31:29 WIB" name="successfulCheckoutTest" finished-at="2024-03-31T06:31:51 WIB" duration-ms="22516" status="PASS">
+        <test-method signature="successfulCheckoutTest()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:50:39 WIB" name="successfulCheckoutTest" finished-at="2024-03-31T06:50:51 WIB" duration-ms="12556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulCheckoutTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:31:51 WIB" name="tearDown" finished-at="2024-03-31T06:31:52 WIB" duration-ms="899" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:50:51 WIB" name="tearDown" finished-at="2024-03-31T06:50:52 WIB" duration-ms="1038" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -76,11 +76,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:31:52 WIB" name="tearDown" finished-at="2024-03-31T06:31:53 WIB" duration-ms="502" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:50:52 WIB" name="tearDown" finished-at="2024-03-31T06:50:53 WIB" duration-ms="734" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:31:53 WIB" name="afterSuite" finished-at="2024-03-31T06:31:53 WIB" duration-ms="19" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:CheckoutTests@692f203f]" started-at="2024-03-31T06:50:53 WIB" name="afterSuite" finished-at="2024-03-31T06:50:53 WIB" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

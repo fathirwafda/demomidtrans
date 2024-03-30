@@ -20,8 +20,17 @@ This project demonstrates how to use Selenium with TestNG for automated web test
 - Run All Tests: Execute mvn test in the project root directory to run all tests.
 - Run Specific Test: Execute mvn test "-Dtest=CheckoutTest#testSuccessfulCheckout" to run a specific test method.
 
+![Recording](test-output/video_recordings.png)
+
 ## Test Reporting
 After running the tests, ExtentReports generates an HTML report in the test-output directory. You can open the testReport.html file in a web browser to view the test results, including logs.
+
+![Reporting](test-output/report1.png)
+
+
+
+
+![Reporting](test-output/report2.png)
 
 ## Architecture/Flow
                   +-------------------------+
@@ -55,10 +64,6 @@ After running the tests, ExtentReports generates an HTML report in the test-outp
 - ReportManager: Manages the singleton instance of ExtentReports, ensuring that only one instance is created and used throughout the test execution.
 - CheckoutTest: Contains test methods. Each test method logs its steps and results to ExtentReports. The InitTest class ensures that the WebDriver is quit and the ExtentReports instance is flushed after each test method.
 - ExtentReports: At the end of the test execution, ExtentReports generates a detailed HTML report with the results of all executed tests.
-
-![Reporting](test-output/report1.png)
-
-![Reporting](test-output/report2.png)
 
 ## Contributing
 
