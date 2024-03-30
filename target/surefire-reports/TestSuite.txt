@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 34.045 s <<< FAILURE! - in TestSuite
+testSuccessfulCheckout(CheckoutTest)  Time elapsed: 7.061 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+TypeError: browsingContext.currentWindowGlobal is null
+Build info: version: '4.19.0', revision: '5f9cec8963'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '11.0.22'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [a30bfbc3-028b-4c5f-803d-d4b38c7fee47, findElement {value=//div[@class='notification-wrapper'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.15.1, moz:accessibilityChecks: false, moz:buildID: 20230912014407, moz:debuggerAddress: localhost:14230, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 93439, moz:profile: /var/folders/9p/1z4y75457f1..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, platformVersion: 22.5.0, proxy: Proxy(), se:cdp: ws://localhost:14230/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a30bfbc3-028b-4c5f-803d-d4b38c7fee47
+	at CheckoutTest.testSuccessfulCheckout(CheckoutTest.java:83)
+

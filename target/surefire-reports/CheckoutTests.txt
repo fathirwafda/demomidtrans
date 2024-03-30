@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: CheckoutTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 42.328 s <<< FAILURE! - in CheckoutTests
+successfulCheckoutTest(CheckoutTests)  Time elapsed: 28.752 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.cssSelector: div.trans-status.trans-success (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.19.0', revision: '5f9cec8963'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '11.0.22'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.15.1, moz:accessibilityChecks: false, moz:buildID: 20230912014407, moz:debuggerAddress: localhost:31286, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 50273, moz:profile: /var/folders/9p/1z4y75457f1..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, platformVersion: 22.5.0, proxy: Proxy(), se:cdp: ws://localhost:31286/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9b13059f-7c49-4873-87d6-4fa411216b7c
+	at CheckoutTests.successfulCheckoutTest(CheckoutTests.java:52)
+
+tearDown(CheckoutTests)  Time elapsed: 28.755 s  <<< FAILURE!
+java.lang.NullPointerException
+
