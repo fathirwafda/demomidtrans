@@ -24,23 +24,23 @@ This project demonstrates how to use Selenium with TestNG for automated web test
 After running the tests, ExtentReports generates an HTML report in the test-output directory. You can open the testReport.html file in a web browser to view the test results, including logs.
 
 ## Architecture/Flow
-                    +-----------------------+
-                    |   InitTest            |
-                    | - Setup WebDriver     |
-                    | - Setup ExtentReports |
-                    +-----------+-----------+
-                                |
-                                v
-                      +---------+---------------+
-                      | ReportManager           |
-                      | - Manages ExtentReports |
-                      +---------+---------------+
-                                |
-                                v
-            +-------------------+-------------------+
-            |                   |                   |
-            v                   v                   v
-    +-------+-------+   +-------+-------+   +-------+-------+
+                  +-------------------------+
+                  |   InitTest              |
+                  | - Setup WebDriver       |
+                  | - Setup ExtentReports   |
+                  +-----------+-------------+
+                              |
+                              v
+                  +-----------+---------------+
+                  | ReportManager             |
+                  | - Manages ExtentReports   |
+                  +-----------+---------------+
+                              |
+                              v
+            +-----------------+-------------------+
+            |                 |                   |
+            v                 v                   v
+    +-------+-------+   +-----+---------+   +-----+---------+
     | CheckoutTest  |   | OtherTest     |   | AnotherTest   |
     | - Test methods|   | - Test methods|   | - Test methods|
     +-------+-------+   +---------------+   +---------------+
