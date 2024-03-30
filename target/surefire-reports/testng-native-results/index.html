@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="CheckoutTest" class="method navigator-link" hash-for-method="testSuccessfulCheckout">testSuccessfulCheckout</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,12 +104,17 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="CheckoutTest" class="method navigator-link" hash-for-method="testCheckoutWithInvalidCard">testCheckoutWithInvalidCard</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="CheckoutTests" class="method navigator-link" hash-for-method="checkoutWithExpiredDateTest">checkoutWithExpiredDateTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="CheckoutTest" class="method navigator-link" hash-for-method="test_1">test_1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="CheckoutTests" class="method navigator-link" hash-for-method="checkoutWithInvalidCardTest">checkoutWithInvalidCardTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CheckoutTests" class="method navigator-link" hash-for-method="successfulCheckoutTest">successfulCheckoutTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -138,65 +129,31 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">CheckoutTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSuccessfulCheckout">
-                  </a> <!-- testSuccessfulCheckout -->
-                  <span class="method-name">testSuccessfulCheckout</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: TypeError: browsingContext.currentWindowGlobal is null
-Build info: version: &apos;4.19.0&apos;, revision: &apos;5f9cec8963&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.4.1&apos;, java.version: &apos;11.0.22&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a30bfbc3-028b-4c5f-803d-d4b38c7fee47, findElement {value=//div[@class=&apos;notification-wrapper&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.15.1, moz:accessibilityChecks: false, moz:buildID: 20230912014407, moz:debuggerAddress: localhost:14230, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 93439, moz:profile: /var/folders/9p/1z4y75457f1..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, platformVersion: 22.5.0, proxy: Proxy(), se:cdp: ws://localhost:14230/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a30bfbc3-028b-4c5f-803d-d4b38c7fee47
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at PaymentPage.getTransactionStatus(PaymentPage.java:50)
-	at CheckoutTest.testSuccessfulCheckout(CheckoutTest.java:83)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">CheckoutTest</span>
+              <span class="class-name">CheckoutTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCheckoutWithInvalidCard">
-                  </a> <!-- testCheckoutWithInvalidCard -->
-                  <span class="method-name">testCheckoutWithInvalidCard</span>
+                  <a name="checkoutWithExpiredDateTest">
+                  </a> <!-- checkoutWithExpiredDateTest -->
+                  <span class="method-name">checkoutWithExpiredDateTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_1">
-                  </a> <!-- test_1 -->
-                  <span class="method-name">test_1</span>
+                  <a name="checkoutWithInvalidCardTest">
+                  </a> <!-- checkoutWithInvalidCardTest -->
+                  <span class="method-name">checkoutWithInvalidCardTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulCheckoutTest">
+                  </a> <!-- successfulCheckoutTest -->
+                  <span class="method-name">successfulCheckoutTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,7 +169,7 @@ Session ID: a30bfbc3-028b-4c5f-803d-d4b38c7fee47
 &lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;CheckoutTest&quot;/&gt;
+      &lt;class name=&quot;CheckoutTests&quot;/&gt;
       &lt;class name=&quot;InitTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
@@ -255,22 +212,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testSuccessfulCheckout')
-data.setCell(0, 2, 'CheckoutTest')
-data.setCell(0, 3, 7041);
+data.setCell(0, 1, 'successfulCheckoutTest')
+data.setCell(0, 2, 'CheckoutTests')
+data.setCell(0, 3, 22516);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testCheckoutWithInvalidCard')
-data.setCell(1, 2, 'CheckoutTest')
-data.setCell(1, 3, 2908);
+data.setCell(1, 1, 'checkoutWithExpiredDateTest')
+data.setCell(1, 2, 'CheckoutTests')
+data.setCell(1, 3, 5491);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test_1')
-data.setCell(2, 2, 'CheckoutTest')
-data.setCell(2, 3, 1);
+data.setCell(2, 1, 'checkoutWithInvalidCardTest')
+data.setCell(2, 2, 'CheckoutTests')
+data.setCell(2, 3, 5180);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -285,9 +242,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">InitTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Surefire_suite" class="panel">
@@ -296,65 +260,63 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">CheckoutTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">startReport</span>
+              <div class="chronological-class-name">CheckoutTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">472 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initPages</span>
-                <span class="method-start">8406 ms</span>
+                <span class="method-start">8321 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testCheckoutWithInvalidCard</span>
-                <span class="method-start">8409 ms</span>
+                <span class="method-name">checkoutWithExpiredDateTest</span>
+                <span class="method-start">8326 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=testCheckoutWithInvalidCard status=SUCCESS method=CheckoutTest.testCheckoutWithInva...)</span>
-                <span class="method-start">11318 ms</span>
+                <span class="method-name">tearDown([TestResult name=checkoutWithExpiredDateTest status=SUCCESS method=CheckoutTests.checkoutWithExpired...)</span>
+                <span class="method-start">13819 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">11324 ms</span>
+                <span class="method-start">14975 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initPages</span>
-                <span class="method-start">18336 ms</span>
+                <span class="method-start">20604 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testSuccessfulCheckout</span>
-                <span class="method-start">18337 ms</span>
+                <span class="method-name">checkoutWithInvalidCardTest</span>
+                <span class="method-start">20604 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=testSuccessfulCheckout status=FAILURE method=CheckoutTest.testSuccessfulCheckout()[...)</span>
-                <span class="method-start">25396 ms</span>
+                <span class="method-name">tearDown([TestResult name=checkoutWithInvalidCardTest status=SUCCESS method=CheckoutTests.checkoutWithInvalid...)</span>
+                <span class="method-start">25785 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">25408 ms</span>
+                <span class="method-start">26539 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test_1</span>
-                <span class="method-start">31558 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">initPages</span>
-                <span class="method-start">31558 ms</span>
+                <span class="method-start">33169 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successfulCheckoutTest</span>
+                <span class="method-start">33169 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=test_1 status=SUCCESS method=CheckoutTest.test_1()[pri:0, instance:CheckoutTest@313...)</span>
-                <span class="method-start">31559 ms</span>
+                <span class="method-name">tearDown([TestResult name=successfulCheckoutTest status=SUCCESS method=CheckoutTests.successfulCheckoutTest()...)</span>
+                <span class="method-start">55686 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">31563 ms</span>
+                <span class="method-start">56587 ms</span>
               </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">57256 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

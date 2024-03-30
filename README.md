@@ -56,6 +56,10 @@ After running the tests, ExtentReports generates an HTML report in the test-outp
 - CheckoutTest: Contains test methods. Each test method logs its steps and results to ExtentReports. The InitTest class ensures that the WebDriver is quit and the ExtentReports instance is flushed after each test method.
 - ExtentReports: At the end of the test execution, ExtentReports generates a detailed HTML report with the results of all executed tests.
 
+![Reporting](test-output/report1.png)
+
+![Reporting](test-output/report2.png)
+
 ## Contributing
 
 You can customize the tests, test data, and reporting as needed for your specific testing requirements. Add more test classes and methods as needed, and modify the ReportManager and TestBase classes to adjust the reporting and WebDriver setup.
