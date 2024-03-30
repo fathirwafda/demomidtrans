@@ -24,6 +24,33 @@ This project demonstrates how to use Selenium with TestNG for automated web test
 After running the tests, ExtentReports generates an HTML report in the test-output directory. You can open the testReport.html file in a web browser to view the test results, including logs.
 
 ## Architecture/Flow
+                    +-----------------------+
+                    |   InitTest            |
+                    | - Setup WebDriver     |
+                    | - Setup ExtentReports |
+                    +-----------+-----------+
+                                |
+                                v
+                      +---------+---------------+
+                      | ReportManager           |
+                      | - Manages ExtentReports |
+                      +---------+---------------+
+                                |
+                                v
+            +-------------------+-------------------+
+            |                   |                   |
+            v                   v                   v
+    +-------+-------+   +-------+-------+   +-------+-------+
+    | CheckoutTest  |   | OtherTest     |   | AnotherTest   |
+    | - Test methods|   | - Test methods|   | - Test methods|
+    +-------+-------+   +---------------+   +---------------+
+            |
+            v
+    +-------+------------+
+    | ExtentReports      |
+    | - Generates report |
+    +--------------------+
+
 - InitTest: All test classes extend InitTest, which handles the setup and teardown of WebDriver and ExtentReports. It ensures that each test has a fresh browser instance and that test results are logged appropriately.
 - ReportManager: Manages the singleton instance of ExtentReports, ensuring that only one instance is created and used throughout the test execution.
 - CheckoutTest: Contains test methods. Each test method logs its steps and results to ExtentReports. The InitTest class ensures that the WebDriver is quit and the ExtentReports instance is flushed after each test method.
